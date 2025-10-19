@@ -5,6 +5,8 @@ import { FetchAllProduct } from "../database/product_service/read_multi_product"
 import { Header } from "../Components/Header";
 import { NavLink } from "react-router";
 import { QueryFarmer } from "../database/farmer_service/query_farmer";
+import { UpdateCurrentUser } from "../database/farmer_service/update_service";
+import { supabase } from "../../client";
 
 export const MarketPlace = () => {
   const [cropData, setCropData] = useState([]);

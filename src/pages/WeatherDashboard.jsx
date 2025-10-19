@@ -13,7 +13,6 @@ import { GoogleGenAI } from "@google/genai";
 
 export const WeatherDashboard = () => {
   // Use States
-
   const [summarizedForecastData, setSummarizedForecastData] = useState({});
   const [summarizedHistoricalData, setSummarizedHistoricalData] = useState({});
   const [days, setDays] = useState([]);

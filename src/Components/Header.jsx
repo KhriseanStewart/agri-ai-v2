@@ -16,7 +16,7 @@ export const Header = () => {
     async function getIsLoggedIn() {
       const currentUser = await supabase.auth.getUser();
       if (currentUser === null) return alert("User doesnt exisit")
-      const { data, error } = await supabase.from("farmer_profile").select("*").eq("user_id", currentUser.data.user.id); 
+      const { data, error } = await supabase.from("farmer_profile").select("*").eq("email", currentUser.data.user.email); 
       if (error) {
         alert(error.message);
         return;
@@ -71,11 +71,27 @@ export const Header = () => {
           >
             Marketplace
           </NavLink>
-          {isLoggedIn ? <div
+          {isLoggedIn && (
+            <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "dark:text-content-dark text-lg font-medium text-primary transition-colors hover:text-primary"
+                : "text-content-light dark:text-content-dark text-lg font-medium transition-colors hover:text-primary"
+            }
+            to="/profile"
+            end
+          >
+            Profile
+          </NavLink>
+          )}
+          {isLoggedIn ?
+          
+            <div
             className="relative"
             onMouseEnter={() => setIsDropdownOpen(true)}
             onMouseLeave={() => setIsDropdownOpen(false)}
           >
+            
             <button className="text-content-light dark:text-content-dark text-lg font-medium transition-colors hover:cursor-pointer hover:text-primary focus:outline-none">
               AI Tools
             </button>
@@ -115,7 +131,11 @@ export const Header = () => {
                 </div>
               </div>
             )}
-          </div>:""}
+            
+          </div> : ""}
+
+          
+          
           {isAdmin ?<NavLink
             to="/admin"
             className={({ isActive }) =>
@@ -201,7 +221,21 @@ export const Header = () => {
               }
             >
               Weather AI
-              </NavLink></> : ""}
+              </NavLink>
+            <NavLink
+              to="/profile"
+              className={({ isActive }) =>
+                isActive
+                  ? "dark:text-content-dark text-lg font-medium text-primary transition-colors hover:text-primary"
+                  : "text-content-light dark:text-content-dark text-lg font-medium transition-colors hover:text-primary"
+              }
+            >
+              Profile
+              </NavLink>
+            
+            
+            </> : ""}
+            
             {isAdmin?<NavLink
               className={({ isActive }) =>
                 isActive
