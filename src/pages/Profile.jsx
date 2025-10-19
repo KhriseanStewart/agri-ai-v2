@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { ReadCurrentUser } from "../database/farmer_service/read_current_farmer";
-import { UpdateCurrentUser } from "../database/farmer_service/update_service";
+import { UpdateCurrentUser, UpdateCurrentUserId } from "../database/farmer_service/update_service";
 import { FetchCurrentUserProducts } from "../database/product_service/read_single_product";
 import { logoutUser } from "../database/farmer_service/log_out";
 import { UpdateProduct } from "../database/farmer_service/update_product";
+import Header from "../Components/Header";
 
 export const Profile = () => {
   const [_userInfo, setuserInfo] = useState(null);
@@ -26,6 +27,13 @@ export const Profile = () => {
       setuserInfo(user);
       setProducts(userProducts || []);
     }
+
+    async function setUserId() {
+      const currentUser = await supabase.auth.getUser();
+      await UpdateCurrentUserId({ user_id: currentUser.data.user.id });
+    }
+
+    setUserId();
     fetchData();
 
     return;
@@ -78,6 +86,9 @@ export const Profile = () => {
   }
 
   return (
+    <>
+    <Header />
+    
     <div className="min-h-screen bg-[#fffdf6] font-sans text-gray-800">
       <main className="max-w-5xl mx-auto p-6">
         <h1 className="text-3xl font-semibold mb-2">Profile</h1>
@@ -367,5 +378,6 @@ export const Profile = () => {
         </div>
       )}
     </div>
+    </>
   );
 };
