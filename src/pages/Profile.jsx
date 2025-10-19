@@ -99,7 +99,7 @@ export const Profile = () => {
         <div className="bg-white shadow-md border border-gray-100 rounded-xl p-6 flex justify-between items-center mb-10">
           <div className="flex items-center gap-4">
             <img
-              src="https://via.placeholder.com/90"
+              src="https://icon-library.com/images/user-png-icon/user-png-icon-16.jpg"
               alt="user avatar"
               className="rounded-full w-20 h-20 border border-gray-200"
             />

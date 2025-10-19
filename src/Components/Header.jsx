@@ -84,6 +84,19 @@ export const Header = () => {
             Profile
           </NavLink>
           )}
+          {isLoggedIn && (
+            <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "dark:text-content-dark text-lg font-medium text-primary transition-colors hover:text-primary"
+                : "text-content-light dark:text-content-dark text-lg font-medium transition-colors hover:text-primary"
+            }
+            to="/buyer-market-place"
+            end
+          >
+            Add Crop
+          </NavLink>
+          )}
           {isLoggedIn ?
           
             <div

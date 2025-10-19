@@ -45,7 +45,7 @@ export const MarketPlaceListingForm = () => {
     "St. Thomas"
   ];
 
-  const weightUnits = ["lb", "kg", "oz", "g"];
+  const weightUnits = ["Select Unit","lb", "kg", "oz", "g"];
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
