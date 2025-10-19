@@ -2,7 +2,7 @@ import { Header } from "../Components/Header";
 import  hero from '../assets/images/hero.jpg';
 import  ai from '../assets/images/ai.jpg';
 import  farm from '../assets/images/farm.jpg';
-import  vege from '../assets/images/vege.jpg';
+import  vege from '../assets/images/Vege.jpg';
 export const LandingPage = () => {
   return (
     <>
