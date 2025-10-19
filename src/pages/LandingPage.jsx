@@ -1,4 +1,5 @@
 import { Header } from "../Components/Header";
+import  hero from '../assets/images/hero.jpg';
 export const LandingPage = () => {
   return (
     <>
@@ -6,7 +7,7 @@ export const LandingPage = () => {
       <main className="flex-grow">
         <section
           className="relative min-h-[60vh] flex items-center justify-center bg-cover bg-center"
-          style={{ backgroundImage: "url('/src/assets/images/hero.jpg')" }}
+          style={{ backgroundImage: `url(${hero})` }}
         >
           <div className="text-center px-4 max-w-4xl text-white">
             <h1 className="text-4xl md:text-6xl font-black tracking-tight text-shadow">
