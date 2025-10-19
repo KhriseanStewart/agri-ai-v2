@@ -1,12 +1,12 @@
 // Internal Imports
-import  parseRecommendation  from "../utils/Fertilizer Advice/responseParser";
-import { FertilizerAdivceForm } from "../pages/components/fertilizer advice/FertilizerAdivceForm";
-import { FertilizerAdviceInstructions } from "../pages/components/fertilizer advice/FertilizerAdviceInstructions";
-import { HeaderCard } from "../pages/components/fertilizer advice/HeaderCard";
-import { NpkRatioVisualization } from "../pages/components/fertilizer advice/NpkRatioVisualization";
-import { PrimaryRecommendation } from "../pages/components/fertilizer advice/PrimaryRecommendation";
-import { AIResponse } from "../pages/components/fertilizer advice/AIResponse";
-import { ProTips } from "../pages/components/fertilizer advice/ProTips";
+import  parseRecommendation  from "../utils/fertilizeradvice/responseParser";
+import { FertilizerAdivceForm } from "../pages/components/fertilizeradvice/FertilizerAdivceForm";
+import { FertilizerAdviceInstructions } from "./components/fertilizeradvice/FertilizerAdviceInstructions";
+import { HeaderCard } from "./components/fertilizeradvice/HeaderCard";
+import { NpkRatioVisualization } from "./components/fertilizeradvice/NpkRatioVisualization";
+import { PrimaryRecommendation } from "./components/fertilizeradvice/PrimaryRecommendation";
+import { AIResponse } from "./components/fertilizeradvice/AIResponse";
+import { ProTips } from "./components/fertilizeradvice/ProTips";
 //External Imports
 import { useState } from "react";
 import { GoogleGenAI } from "@google/genai";

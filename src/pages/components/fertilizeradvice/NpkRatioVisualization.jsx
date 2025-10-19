@@ -1,5 +1,5 @@
 import { TrendingUp } from "lucide-react";
-import { getNutrientStroke } from "../../../utils/fertilizer advice/nutrientColor";
+import { getNutrientStroke } from "../../../utils/fertilizeradvice/nutrientColor";
 
 export const NpkRatioVisualization = ({ recommendation }) => {
   return (
