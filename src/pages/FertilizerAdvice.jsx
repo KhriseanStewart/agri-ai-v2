@@ -1,6 +1,7 @@
 // Internal Imports
-import  parseRecommendation  from "../utils/fertilizeradvice/responseParser";
-import { FertilizerAdivceForm } from "../pages/components/fertilizeradvice/FertilizerAdivceForm";
+// Internal Imports
+import { parseRecommendation } from "../utils/fertilizeradvice/responseParser";
+import { FertilizerAdivceForm } from "./components/fertilizeradvice/FertilizerAdivceForm";
 import { FertilizerAdviceInstructions } from "./components/fertilizeradvice/FertilizerAdviceInstructions";
 import { HeaderCard } from "./components/fertilizeradvice/HeaderCard";
 import { NpkRatioVisualization } from "./components/fertilizeradvice/NpkRatioVisualization";

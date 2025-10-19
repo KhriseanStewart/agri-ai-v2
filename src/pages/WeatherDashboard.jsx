@@ -1,10 +1,11 @@
 // Internal Imports
+// Internal Imports
 import { parseGeminiResponse } from "../utils/weatherdashboard/responseParser";
-import  {Header}  from "../Components/Header";
+import { Header } from "../Components/Header";  // Note: Capital C in Components
 import { summarizeWeather } from "../utils/weatherdashboard/weatherSummary";
-import { WeatherComponent } from "../pages/components/weatherdashboard/WeatherComponent";
-import { FarmingAdvice } from "../pages/components/weatherdashboard/FarmingAdvice";
-import { PlantingAndHarvesting } from "../pages/components/weatherdashboard/PlantingAndHarvesting";
+import { WeatherComponent } from "./components/weatherdashboard/WeatherComponent";
+import { FarmingAdvice } from "./components/weatherdashboard/FarmingAdvice";
+import { PlantingAndHarvesting } from "./components/weatherdashboard/PlantingAndHarvesting";
 
 // External Imports
 import { useState, useEffect } from "react";
