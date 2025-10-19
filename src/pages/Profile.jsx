@@ -218,7 +218,7 @@ export const Profile = () => {
                         Category: {product.category}
                       </p>
                       <p className="text-lg font-semibold text-green-600 mb-1">
-                        ${product.price}/{product.weight_unit}
+                        ${product.price}
                       </p>
                       <p className="text-sm text-gray-600 mb-1">
                         Available: {product.amount} units
