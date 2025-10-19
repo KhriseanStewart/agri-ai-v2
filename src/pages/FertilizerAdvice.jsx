@@ -1,5 +1,5 @@
 // Internal Imports
-import { parseRecommendation } from "../utils/Fertilizer Advice/responseParser";
+import  parseRecommendation  from "../utils/Fertilizer Advice/responseParser";
 import { FertilizerAdivceForm } from "../pages/components/fertilizer advice/FertilizerAdivceForm";
 import { FertilizerAdviceInstructions } from "../pages/components/fertilizer advice/FertilizerAdviceInstructions";
 import { HeaderCard } from "../pages/components/fertilizer advice/HeaderCard";
