@@ -1,6 +1,6 @@
 // Internal Imports
 import { parseGeminiResponse } from "../utils/weatherdashboard/responseParser";
-import { Header } from "../components/Header";
+import  {Header}  from "../Components/Header";
 import { summarizeWeather } from "../utils/weatherdashboard/weatherSummary";
 import { WeatherComponent } from "../pages/components/weatherdashboard/WeatherComponent";
 import { FarmingAdvice } from "../pages/components/weatherdashboard/FarmingAdvice";
